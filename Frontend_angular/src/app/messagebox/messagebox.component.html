@@ -1,0 +1,63 @@
+<app-header2></app-header2>
+
+
+<div class="wrapper2">
+    <button (click)="clearMessage()" id="clearbutton" class="btn btn-primary btn-md"> Clear Inbox</button>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  
+
+<div class="messagebox">
+
+  <h2>Your Inbox</h2>
+
+  <table id="t01">
+    <tr>
+      <th>LISTING</th>
+      <th>MESSAGE</th>
+      <th>FROM</th>
+      <th>REPLY</th>
+    </tr>
+
+    <tr *ngFor="let x of data; index as i">
+
+      <!-- started from here -->
+      <td>
+        <img src='{{x.img}}' style="height: 150px; width: 100px ;background-color: beige">
+
+        <br>
+        <b> {{x.book_name}} </b>
+
+        <br>
+
+      </td>
+
+      <!-- ended here -->
+
+      <td>{{x.message}}</td>
+
+      <td>{{x.sender_email}}</td>
+
+      <td>
+        <button (click)="replyToSender(i)" class="btn btn-primary btn-md"> Reply </button>
+
+      </td>
+
+    </tr>
+
+
+  </table>
+
+</div>
+
+
+
+
+
+
+
+
+<app-footer2></app-footer2>

@@ -1,0 +1,76 @@
+
+<app-header2></app-header2>
+
+  <div class="addpanel"> 
+
+    <!-- <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Seller Id:</span>
+        </div>
+        <input #sellerid type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div> -->
+
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Your email:</span>
+          </div>
+          <input #sellerEmail type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Book name:</span>
+        </div>
+        <input #bookname type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Author name:</span>
+          </div>
+          <input #authorname type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Image :</span>
+            </div>
+            <input #img type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Price:</span>
+              </div>
+              <input #price type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Condition:</span>
+                </div>
+                <input #bookcond type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+              </div>
+
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Category:</span>
+                  </div>
+                  <input #category type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                </div>
+                
+
+  <div class="wrapper">
+
+  <button  type="button" class="btn btn-secondary"
+           (click)="addToListing(sellerid.value,bookname.value,authorname.value,
+           img.value,price.value,bookcond.value,category.value,sellerEmail.value); 
+           bookname.value=''; authorname.value='' ;img.value='';
+           price.value='';bookcond.value='';category.value='';sellerid.value=''; sellerEmail.value='' ">
+    Add Book
+  </button>
+  </div>
+</div>
+
+<app-footer2></app-footer2>

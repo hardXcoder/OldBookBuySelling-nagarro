@@ -1,0 +1,83 @@
+<app-header2>
+</app-header2>
+
+
+<div class="wrapper2">
+  <button (click)="placeOrder()" id="placebutton" class="btn btn-primary btn-md"> Place Your Order</button>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="cart">
+
+  <h2>Your Cart</h2>
+
+  <table id="t01">
+    <tr>
+      <th>ITEM</th>
+      <th>PRICE</th>
+      <th>QUANTITY</th>
+      <th>AMOUNT</th>
+    </tr>
+
+    <tr *ngFor="let x of data; index as i">
+
+      <!-- started from here -->
+      <td>
+        <img src='{{x.img}}' style="height: 150px; width: 100px ;background-color: beige">
+
+        <button (click)="incOrder(i)" class="plus">
+          <i class="fas fa-plus"></i>
+          <b></b>
+        </button>
+
+        <button (click)="decOrder(i)" class="minus">
+          <i class="fas fa-minus"></i>
+          <b></b>
+        </button>
+
+        <br>
+        <b> {{x.book_name}} </b>
+
+        <br>
+        <br>
+        <button (click)="removeFromCart(i)" class="btn btn-primary btn-md addtocart"> Remove from CART</button>
+
+      </td>
+
+      <!-- ended here -->
+
+      <td>{{x.price}}</td>
+
+      <td>{{x.quantity}}</td>
+
+      <td>{{x.price}}*{{x.quantity}}</td>
+    </tr>
+
+    <tr>
+      <td>
+        <b>
+          TOTAL CART VALUE
+        </b>
+      </td>
+
+      <td colspan="3" id="totalvalue">
+        {{totalamount | currency : "INR" : "symbol"}}
+      </td>
+
+    </tr>
+  </table>
+
+  <div class="wrapper">
+    <button (click)="placeOrder()" id="placebutton" class="btn btn-primary btn-md"> Place Your Order</button>
+  </div>
+
+</div>
+
+
+
+
+
+<app-footer2></app-footer2>

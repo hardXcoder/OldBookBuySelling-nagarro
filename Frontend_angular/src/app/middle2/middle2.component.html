@@ -1,0 +1,75 @@
+
+<div id ="mainbody">
+<img  src='https://goo.gl/wfGTDf'
+ alt="Card image cap" style="height: 300px; width:100%; background-color: beige">
+
+
+
+<div class="input-group mb-3">
+  <input #searchinput type="text" class="form-control" placeholder="Search by name / author / category / condition / price" aria-label="Recipient's username"
+    aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <!-- <button>
+      <span class="input-group-text" id="basic-addon2">Search</span>
+    </button> -->
+  </div>
+</div>
+
+<button (click)="clickedCategory(searchinput.value); searchinput.value='' " class="btn">
+  Category </button>
+
+<button (click)="clickedCondition(searchinput.value);searchinput.value=''" class="btn">
+  Condition </button>
+
+<button (click)="clickedName(searchinput.value);searchinput.value=''" class="btn">
+  Name </button>
+
+<button (click)="clickedAuthor(searchinput.value);searchinput.value=''" class="btn">
+  Author </button>
+
+<button (click)="clickedPrice(searchinput.value);searchinput.value=''" class="btn">
+  Price </button>
+
+
+
+<h1 id ="nobook">{{result}}</h1>
+
+
+
+<div class="band">
+
+  <!-- grid item, containing a card -->
+  <!-- <div class="item-1"> -->
+  <div *ngFor="let x of bookArray; index as i">
+
+    <div class="card">
+
+      <a routerLink="/itemdesc/{{x.book_id}}" class="card">
+
+        <article>
+
+          <img class="card-img-top" src='{{x.img}}' alt="Card image cap" style="height: 300px;background-color: beige">
+
+          <span>Book</span>
+          <h1>{{x.book_name}}</h1>
+
+          <!-- <span>Author</span>
+          <h1>{{x.author_name}}</h1> -->
+
+          <span>price</span>
+          <h2>Rs.{{x.price}}  <p class="strike">Rs.1000</p></h2>
+
+          <span>Condition</span>
+          <h1>{{x.book_condition}}</h1>
+          <br>
+
+        </article>
+      </a>
+
+      <button (click)="addToCart(i)" id="cartbtn" class="btn btn-primary btn-md addtocart"> ADD TO CART</button>
+
+    </div>
+  </div>
+
+</div>
+</div>

@@ -1,0 +1,75 @@
+<app-header2></app-header2>
+
+<app-middle2></app-middle2>
+
+<app-footer2></app-footer2>
+
+
+
+<!-- 
+<div style="float:right" class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Search by
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Book Name</a>
+    <a class="dropdown-item" href="#">Author action</a>
+    <a class="dropdown-item" href="#">Category</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown link
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+
+<div *ngFor ="let x of bookArray; index as i">
+
+<div class="card" style="width: 18rem; ">
+    <img class="card-img-top" src="{{x.img}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{x.book_name}}</h5>
+      <p class="card-text"><b>Condition : </b>{{x.book_condition}}</p>
+      <p class="card-text"><b>Price : </b>{{x.price}}</p>
+      <p class="card-text"><b>Category : </b>{{x.category}}</p>
+
+
+      <a href="/login" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-sm-6">
+    <div class="card" style="width: 15rem; margin-top: 50px;background-color: beige">
+        <a routerLink="/itemdesc/{{x.book_id}}">
+
+          <img class="card-img-top" src='{{x.img}}' alt="Card image cap" style="height: 300px;background-color: beige">
+          
+        </a>
+          <div class="card-body">
+            <h5 class="card-title"><b>{{x.book_name}}</b></h5>
+            <p class="card-text"><b>Condition : </b>{{x.book_condition}}</p>
+            <p class="card-text"> <b>Price : </b>{{x.price}}</p>
+            <p class="card-text"> <b>Category : </b>{{x.category}}
+            <div class="card-footer" style="text-align: center">
+              <button (click)="addToCart(i)" class="btn btn-primary btn-md addtocart" > ADD TO CART</button>
+              </div>
+          </div>
+        </div>
+</div>
+  </div> -->
+
+
+
+
+
+
+
+

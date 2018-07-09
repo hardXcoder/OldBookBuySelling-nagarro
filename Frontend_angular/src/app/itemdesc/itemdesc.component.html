@@ -1,0 +1,76 @@
+<app-header2>
+</app-header2>
+
+
+
+
+<div *ngFor="let x of bookdesc; index as i" class="maindiv">
+
+
+  <div id="first" style="padding: 20px">
+
+
+    <img src="{{x.img}}" class="img-fluid" style="height:500px ; width:400px" alt="Responsive image">
+
+
+  </div>
+
+
+  <div id="second" style="padding: 20px">
+
+    <span>
+
+      <div class="listImage2">
+
+        <h2>
+          <b>Book : </b>{{x.book_name}}</h2>
+        <h2>
+          <b>Author : </b>{{x.author_name}}</h2>
+
+        <h2>
+          <b>Condition : </b>{{x.book_condition}}</h2>
+
+        <h2>
+          <b>Price : </b>{{x.price | currency : "INR" :"symbol"}}</h2>
+
+        <br>
+        <br>
+
+
+        <button (click)="addToCart(i)" class="btn">
+            <i class="fas fa-cart-plus"></i> Add to Cart</button>
+
+            <button (click)="buyNow()" class="btn">
+                <i class="far fa-money-bill-alt"></i> Buy Now</button>
+
+        <button (click)="contactSeller()" class="btn">
+          <i class="fas fa-phone"></i> Contact Seller</button>
+
+
+      </div>
+
+
+    </span>
+
+
+
+  </div>
+
+</div>
+
+
+<app-footer2></app-footer2>
+
+<!-- <div class="card" style="width: 18rem; ">
+    <img class="card-img-top" src="{{x.img}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{x.book_name}}</h5>
+      <p class="card-text"><b>Condition : </b>{{x.book_condition}}</p>
+      <p class="card-text"><b>Price : </b>{{x.price}}</p>
+      <p class="card-text"><b>Category : </b>{{x.category}}</p>
+
+
+      <a href="/login" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div> -->
+<!-- <div class="col-lg-4 col-sm-2"> -->

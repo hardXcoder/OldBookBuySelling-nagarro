@@ -1,0 +1,14 @@
+<app-header2></app-header2>
+
+<br>
+<br>
+<div class = messagebox>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1"><h2><b> Enter your message here</b></h2></label>
+    <textarea #messagetext class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <button type="button" (click)="storeMessage(messagetext.value);messagetext.value='' " class="btn btn-success">Send Message</button>
+
+</div>
+  <app-footer2></app-footer2>

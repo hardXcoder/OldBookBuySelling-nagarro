@@ -1,0 +1,60 @@
+.listImage2{
+    border-radius: 25px;
+    background-color:#FFE4C4;
+    color:black;
+    padding:20px;
+}
+
+.listDet{
+    padding: 20px;
+    float: right;
+}
+
+
+
+	
+.btn {
+    background-color: DodgerBlue; 
+    border: none; 
+    color: white;
+    padding: 15px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-left: 5px;
+    /* float:right; */
+
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+.maindiv{
+    padding-top: 20px;
+    height:500px ;
+     width:1285px;
+
+}
+
+
+
+#container {
+    /* width: 300px; */
+    background-color: #ffcc33;
+    margin: auto;
+}
+#first {
+    /* width: 500px; */
+    
+    float: left;
+    /* height: 300px; */
+}
+#second {
+    /* width: 200px; */
+    float: left;
+    /* height: 300px; */
+}
+
+
+

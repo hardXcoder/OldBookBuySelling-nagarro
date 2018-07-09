@@ -1,0 +1,21 @@
+.addpanel{
+    padding: 45px;
+    background-image: url("https://goo.gl/1Nxe8h");
+
+}
+#addbtn{
+    position: center;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#addbtn{
+    color: black;
+    position: absolute;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ff9f00;
+
+}
