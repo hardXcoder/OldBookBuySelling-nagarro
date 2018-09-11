@@ -2,7 +2,7 @@
 
 ## Heroku app link
 
-https://bookbechoindia.herokuapp.com 
+https://bookbechoindia.herokuapp.com  
 
 ## Click on the link below to see the demo video  
 
